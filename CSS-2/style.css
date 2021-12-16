@@ -1,0 +1,9 @@
+/* h3: Selector
+{}: Expression
+color, text-align: Properties
+blue, center: Values */
+
+h3 {
+    color: blue;
+    text-align: center;
+}
