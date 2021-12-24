@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            /* pseudo elements: fake elements
+            after and before */
+
+            /* #parent {
+                height: 240px;
+            } */
+            .col-1 {
+                background-color: tomato;
+                width: 30%;
+                float: left;
+            }
+            .col-2 {
+                background-color: violet;
+                width: 30%;
+                float:right;
+            }
+            /* .clear {
+                clear: both;
+            } */
+
+            #parent::after {
+                content: "";
+                clear: both;
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id="parent">
+            <div class="col-1">
+                <h2>This is a column-1</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut qui necessitatibus sapiente fuga, ut assumenda et in voluptatibus sed est iste modi, labore eum voluptatum, eveniet doloremque fugiat voluptate? Ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas harum blanditiis eaque, culpa nulla officia odio non velit, tenetur placeat commodi, reprehenderit nesciunt nostrum eius cum! Praesentium quibusdam similique quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis mollitia commodi perferendis voluptatibus dolore nobis inventore laudantium illum natus. Corrupti rem in quod veritatis nesciunt officiis tempore quis ducimus et!
+                </p>
+            </div>
+            <div class="col-2">
+                <h2>This is a column-2</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut qui necessitatibus sapiente fuga, ut assumenda et in voluptatibus sed est iste modi, labore eum voluptatum, eveniet doloremque fugiat voluptate? Ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas harum blanditiis eaque, culpa nulla officia odio non velit, tenetur placeat commodi, reprehenderit nesciunt nostrum eius cum! Praesentium quibusdam similique quo.
+                </p>
+            </div>
+            <!-- <div class="clear">
+
+            </div> -->
+        </div>
+
+        <div>
+            <h2>This is a column</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut qui necessitatibus sapiente fuga, ut assumenda et in voluptatibus sed est iste modi, labore eum voluptatum, eveniet doloremque fugiat voluptate? Ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas harum blanditiis eaque, culpa nulla officia odio non velit, tenetur placeat commodi, reprehenderit nesciunt nostrum eius cum! Praesentium quibusdam similique quo.
+            </p>
+        </div>
+
+    </body>
+</html>
