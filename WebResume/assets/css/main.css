@@ -1,10 +1,52 @@
 body {
     margin: 0px;
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
+    color: #79018C;
+}
+
+h1 {
+    font-size: 90px;
+    color: #fff;
+    font-family: 'Sacramento', cursive;
+}
+
+h2 {
+    font-size: 30px;
+    color: #9A0680;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+h3 {
+    color: #4C0070;
+    font-size: 20px;
+    font-family: 'Indie Flower', cursive;
+}
+
+p {
+    font-size: 17px;
+    color: #79018C;
+}
+
+span {
+    color: #fff;
+}
+
+hr {
+    width: 4%;
+    border-style: dotted;
+    border-width: 18px;
+    border-bottom: none;
+    border-color: #f3efef;
+    margin: 100px auto 120px;
 }
 
 #top-container {
-    background-color: aquamarine;
+    background-color: #160040;
     position: relative;
 }
 
@@ -60,6 +102,42 @@ body {
     border-radius: 20px;
 }
 
-#bottom-container {
-    background-color: aquamarine;
+.contact-me {
+    width: 40%;
+    margin: 40px auto 20px;
 }
+
+.contact-message {
+    margin:40px auto 20px;
+}
+
+.btn
+{
+    background-color: #160040;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    background-color: #4C0070;
+    color: #fff;
+}
+
+#bottom-container {
+    background-color: #160040;
+    padding: 40px 0 60px;
+}
+
+.footer-link {
+    margin: 0 20px;
+}
+
+.footer-link:hover {
+    color: #fff;
+}
+
+.copyright {
+    padding: 20px 0;
+}
+
