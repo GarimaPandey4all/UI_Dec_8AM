@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 2px solid red;
+            overflow: hidden;
+        }
+
+        #div-1 img {
+            transition-duration: 5s;
+        }
+
+        #div-1:hover img
+        {
+            transform: translate(1000px, 200px);
+            /* transform: translateY(200px); */
+            /* transform: translateX(1000px); */
+            /* transition-duration: 5s; */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Transformations - Animations
+    Types:
+    1. Translate - move
+    2. Scale - resize
+    3. Rotate - Rotate
+    4. Skew
+    5. Perspective -->
+
+    <div id="div-1">
+        <img src="https://www.fightersgeneration.com/characters/hulk-walk.gif" alt="">
+    </div>
+
+    <div>
+        <img src="https://www.fightersgeneration.com/characters/hulk-walk.gif" alt="">
+    </div>
+
+    <div>
+        <img src="https://www.fightersgeneration.com/characters/hulk-walk.gif" alt="">
+    </div>
+
+</body>
+</html>
