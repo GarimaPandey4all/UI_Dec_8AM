@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="MediaQueries.css">
+    <link rel="stylesheet" href="MediaQueries.css" />
   </head>
   <body>
-
     <!-- Media Queries
 
     Responsive Webpage
@@ -21,21 +20,31 @@
     576px  - Mobiles
     480px 
     360px
-    320px - Mobiles -->
+    320px - Mobiles 
+
+  -->
 
     <header id="header">
-        <div class="logo">
-            <h1>Flexbox Properties</h1>
-        </div>
-        <nav id="main-nav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Kids</a></li>
-                <li><a href="#">Men</a></li>
-                <li><a href="#">Women</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </nav>
+      <div class="logo">
+        <h1>Flexbox Properties</h1>
+      </div>
+      <nav id="main-nav">
+        <!-- Hamburger Menu -->
+        <input type="checkbox" value="toggle-menu">
+        <button class="menu-btn">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Kids</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
     </header>
 
     <div id="parent">

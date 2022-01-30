@@ -29,6 +29,96 @@ ul li {
   margin: 0px 20px;
 }
 
+.menu-btn {
+  position: absolute;
+  top: 35px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  pointer-events: none;
+  display: block;
+}
+
+.menu-btn .line {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin-bottom: 4px;
+  background-color: rgb(34, 9, 9);
+  transition: 1s;
+}
+
+input[value="toggle-menu"]
+{
+  position: absolute;
+  top: 35px;
+  right: 22px;
+  height: 15px;
+  width: 30px;
+  cursor: pointer;
+  /* opacity: 0; */
+  display: none;
+}
+
+@media (min-width: 768px) {
+
+  .menu-btn {
+    display: none;
+  }
+  
+}
+
+@media (max-width: 767px) {
+  .menu-btn {
+    display: block;
+  }
+
+  input[value="toggle-menu"]
+  {
+    display: block;
+    opacity: 0;
+  }
+
+  #main-nav ul {
+    position: absolute;
+    display: block;
+    top: 73px;
+    left: 0px;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: translate(0%, -150%);
+    transition: 1s;
+  }
+
+  ul li {
+    padding: 10px 0px;
+    margin: 0px;
+  }
+
+  ul li a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  #main-nav input[value="toggle-menu"]:checked ~ ul {
+    transform: translate(0%, 0%);
+  }
+
+  #main-nav input[value="toggle-menu"]:checked ~ .menu-btn .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  #main-nav input[value="toggle-menu"]:checked ~ .menu-btn .line:first-child {
+    transform: rotate(45deg);
+  }
+  #main-nav input[value="toggle-menu"]:checked ~ .menu-btn .line:last-child {
+    transform: rotate(-45deg);
+    margin-top: -13px;
+  }
+}
+
 #parent {
   /* flex: flexbox */
   display: flex;
