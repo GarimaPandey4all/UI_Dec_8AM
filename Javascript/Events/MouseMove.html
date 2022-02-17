@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #image {
+            height: 500px;
+            background-image: url("https://static.onecms.io/wp-content/uploads/sites/6/2020/10/15/iron-man.jpg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="image" onmousemove="animation(this)">
+
+    </div>
+
+    <script>
+        function animation(evt)
+        {
+            var x = event.clientX;
+            var y = event.clientY;
+
+           // console.log(x, y);
+
+            evt.style.backgroundPositionX = -x * 0.5 +'px';
+            evt.style.backgroundPositionY = -y * 0.5 +'px';
+        }
+    </script>
+    
+</body>
+</html>
